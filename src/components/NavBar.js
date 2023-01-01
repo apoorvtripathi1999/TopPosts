@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import Prices from './Prices'
 
 export default class navBar extends Component {
   render() {
@@ -7,23 +9,23 @@ export default class navBar extends Component {
       <div>
       <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand d-flex justify-content-between" href="/" >Navbar</a>
+        <Link className="navbar-brand d-flex justify-content-between" to="/" >Top Posts</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
           <ul className="navbar-nav align-self-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Home</a>
+              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Top Stories</a>
+              <Link className="nav-link active" aria-current="page" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">My Read</a>
+              <Link className="nav-link active" aria-current="page" to="/myread">My Read</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Membership</a>
+              <Link className="nav-link active" aria-current="page" to="/membership">Membership</Link>
             </li>
           </ul>
         </div>

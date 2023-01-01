@@ -10,13 +10,13 @@ export default class Descimages extends Component {
       <div className='container-carousel'>
       <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
      <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="10000">
+    <div className="carousel-item active" data-bs-interval="5000">
       <img src={imgo} className="d-block w-60 mx-auto" alt="..."/>
     </div>
-    <div className="carousel-item" data-bs-interval="2000">
+    <div className="carousel-item " data-bs-interval="5000">
       <img src={imgt} className="d-block w-60 mx-auto" alt="..."/>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item " data-bs-interval="5000">
       <img src={imgth} className="d-block w-60 mx-auto" alt="..."/>
     </div>
   </div>

@@ -1,22 +1,15 @@
 import React from 'react'
 
-export default function Pricecard() {
+export default function Pricecard({cost,features,gotobutton,titlecost}) {
   return (
     <>
-    <div className="card" style="width: 18rem;">
-    <div className="card-body">
-    <h5 className="card-title"></h5>
-    <p className="card-text"></p>
-    </div>
-    <ul className="list-group list-group-flush">
-    <li className="list-group-item"></li>
-    <li className="list-group-item"></li>
-    <li className="list-group-item"></li>
-    </ul>
-    <div className="card-body">
-    <a href="/" className="card-link">Card link</a>
-    <a href="/" className="card-link">Another link</a>
-    </div>
+    <div className='card rounded-3'>
+    <div className="card-body rounded-3">
+    <h4 className="card-title border-bottom border-dark my-2">{titlecost}</h4>
+    <h1 className="card-title border-bottom border-dark my-2">{cost}</h1>
+    <ul className='listing my-2'>{features}</ul>
+    <a href="/" className="btn btn-dark my-2">{gotobutton}</a>
+   </div>
     </div>
     </>
   )
