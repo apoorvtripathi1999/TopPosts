@@ -19,8 +19,8 @@ export default function Myread() {
           <div><h6><b>{cata} news</b></h6></div>
         </div>
         <div className="myread-main">
-          <div className="myread-sections">
-            <div className="border-dark rounded">
+          <div className="myread-sections sidebar-main">
+            <div className="border-dark sidebar-group">
               <div
                 className="btn-group-vertical"
                 role="group"
@@ -89,7 +89,7 @@ export default function Myread() {
           <div className="myread-sections">
             {mainHeadline.articles.map((e) => {
               console.log(cata);
-              return e.source.id == cata ? (
+              return e.source.id === cata ? (
                 e.urlToImage ? (
                   <Article imageUrl={e.urlToImage} description={e.title} />
                 ) : null
@@ -97,7 +97,7 @@ export default function Myread() {
             })}
           </div>
           {/* --------------End of Main Articles Section-------------------------------------------*/}
-          <div className="myread-sections">
+          <div className="myread-sections popular">
             <div className="top-story-heading">
               <h5>
                 <b>POPULAR CONTENT</b>

@@ -29,10 +29,6 @@ export default class navBar extends Component {
             </li>
           </ul>
         </div>
-        <div className="form-check form-switch me-4">
-            <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-            <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
-        </div>
         <button type="button" id="btn-sign-in" className="btn btn-dark">Sign In</button>
       </div>
     </nav>
