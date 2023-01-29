@@ -6,21 +6,21 @@ import mainHeadline from "../data/mainHeadline.json";
 
 export default function Myread() {
   const [cata, setCata] = useState("main");
-  function getCata(catagory) {
+  function getCata(catagory) { //function to set the catagory
     setCata(catagory);
   }
-  useEffect(() => { }, [cata]);
+  useEffect(() => { }, [cata]); //to be refreshed whenever there is a change in catgory
 
   return (
     <>
-      <div>
+      <div className="my-read-main">
         <div className="myread-heading">
-          <h1>My Dashboard</h1>
+          <h1>Top Articles</h1>
           <div><h6><b>{cata} news</b></h6></div>
         </div>
         <div className="myread-main">
-          <div className="myread-sections">
-            <div className="border-dark rounded">
+          <div className="myread-sections sidebar-main">
+            <div className="border-dark sidebar-group">
               <div
                 className="btn-group-vertical"
                 role="group"
@@ -88,16 +88,15 @@ export default function Myread() {
           {/* --------------End of navigation------------------------------------------------------*/}
           <div className="myread-sections">
             {mainHeadline.articles.map((e) => {
-              console.log(cata);
-              return e.source.id == cata ? (
-                e.urlToImage ? (
-                  <Article imageUrl={e.urlToImage} description={e.title} />
+              return e.source.id === cata ? ( //check if the catagory matches with the object element catagory
+                e.urlToImage ? ( //check if the image url is active
+                  <Article imageUrl={e.urlToImage} description={e.title} url={e.url} />
                 ) : null
               ) : null;
             })}
           </div>
           {/* --------------End of Main Articles Section-------------------------------------------*/}
-          <div className="myread-sections">
+          <div className="myread-sections popular">
             <div className="top-story-heading">
               <h5>
                 <b>POPULAR CONTENT</b>

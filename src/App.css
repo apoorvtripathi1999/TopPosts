@@ -148,6 +148,10 @@
   padding-top: 50px;
   border-bottom: 1px dashed #cbced4;
 }
+.testimonial-main
+{
+background-color: #dfebf6;
+}
 .imga
 {
   border-radius: 200px;
@@ -175,6 +179,11 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 100px;
+  background-color: #dfe0f6;
+}
+.contact-head
+{
+  background-color: #dfe0f6;
 }
 .contact-form
 {
@@ -277,6 +286,7 @@
   display: flex;
   justify-content: center;
   color: rgb(211, 121, 136);
+  margin-top: -150px;
 }
 .card-image
 {
@@ -291,6 +301,32 @@
 {
   width: 500px;
 }
-
-/* overflow-y: scroll;
-    height: calc(100vh - 356px); */
+.sidebar-main
+{
+  background-color: #212529;
+  width: 250px;
+  position: fixed;
+  padding-top: 200px;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  border-radius: none;
+}
+.popular
+{
+  position: fixed;
+  padding-top: 250px;
+  padding-right: 50px;
+  top: 0;
+  right: 0;
+  max-width: 300px;
+}
+.sidebar-group
+{
+  display: flex;
+  flex-direction: column;
+}
+.my-read-main
+{
+  background-color: #dfe0f6;
+}
