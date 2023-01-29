@@ -148,6 +148,10 @@
   padding-top: 50px;
   border-bottom: 1px dashed #cbced4;
 }
+.testimonial-main
+{
+background-color: #dfebf6;
+}
 .imga
 {
   border-radius: 200px;
@@ -175,6 +179,11 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 100px;
+  background-color: #dfe0f6;
+}
+.contact-head
+{
+  background-color: #dfe0f6;
 }
 .contact-form
 {
@@ -301,6 +310,7 @@
   top: 0;
   left: 0;
   height: 1000px;
+  border-radius: none;
 }
 .popular
 {
@@ -315,4 +325,8 @@
 {
   display: flex;
   flex-direction: column;
+}
+.my-read-main
+{
+  background-color: #dfe0f6;
 }

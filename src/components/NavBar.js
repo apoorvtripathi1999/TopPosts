@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Prices from './Prices'
 
 export default class navBar extends Component {
   render() {
@@ -22,7 +21,7 @@ export default class navBar extends Component {
               <Link className="nav-link active" aria-current="page" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/myread">My Read</Link>
+              <Link className="nav-link active" aria-current="page" to="/myread">Read</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/membership">Membership</Link>
